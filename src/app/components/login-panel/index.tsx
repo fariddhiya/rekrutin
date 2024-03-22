@@ -1,7 +1,5 @@
 import Image from 'next/image';
-import Login1 from '../../../../common/assets/images/login-1.svg';
-import GoogleIcon from '../../../common/assets/images/google.png';
-import { Button, Input } from 'antd';
+import Login1 from '../../../common/assets/images/login-1.svg';
 import { Carousel } from 'antd';
 
 export const LoginPanel = () => {

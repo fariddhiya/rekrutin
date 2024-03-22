@@ -1,14 +1,14 @@
 'use client';
 import Image from 'next/image';
 
-import GoogleIcon from '../../../common/assets/images/google.png';
+import GoogleIcon from '../../common/assets/images/google.png';
 import { Button, Input } from 'antd';
 import { LoginPanel } from '../components/login-panel';
-import BackButton from '../../../common/assets/images/back.png';
-import { useRouter } from 'next/router';
+import BackButton from '../../common/assets/images/back.png';
+// import { useRouter } from 'next/router';
 
 export default function ForgotPasswordPage() {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <main className='flex h-screen flex-row items-center justify-center bg-slate-100'>
       {/* LEFT-SIDE */}
@@ -20,7 +20,7 @@ export default function ForgotPasswordPage() {
         <div className='absolute left-12 top-12'>
           <Button
             className='flex h-10 w-10 items-center justify-center'
-            onClick={() => router.back()}
+            // onClick={() => router.back()}
           >
             <Image
               className='m'

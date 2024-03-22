@@ -13,37 +13,37 @@ const menu = [
   {
     menu: 'Dashboard',
     icon: DashboardIco,
-    isActive: true,
+    slug: 'dashboard',
   },
   {
     menu: 'Job',
     icon: JobIco,
-    isActive: false,
+    slug: 'job',
   },
   {
     menu: 'Candidates',
     icon: CandidateIco,
-    isActive: false,
+    slug: 'candidate',
   },
   {
     menu: 'Calendar',
     icon: CalendarIco,
-    isActive: false,
+    slug: 'calendar',
   },
   {
     menu: 'Message',
     icon: MessageIco,
-    isActive: false,
+    slug: 'message',
   },
   {
     menu: 'Setting',
     icon: SettingIco,
-    isActive: false,
+    slug: 'setting',
   },
   {
     menu: 'Help Center',
     icon: CustomerSupportIco,
-    isActive: false,
+    slug: 'help-center',
   },
 ];
 

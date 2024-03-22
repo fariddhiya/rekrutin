@@ -3,14 +3,12 @@ import { SearchOutlined } from '@ant-design/icons';
 
 const SearchBar = () => {
   return (
-    <div>
-      <Input
-        placeholder='Search jobs, role and more...'
-        prefix={<SearchOutlined />}
-        className='h-12 w-96'
-        size='large'
-      />
-    </div>
+    <Input
+      placeholder='Search jobs, role and more...'
+      prefix={<SearchOutlined />}
+      className='h-full !w-80'
+      size='large'
+    />
   );
 };
 

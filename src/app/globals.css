@@ -35,7 +35,6 @@ body {
 
 @layer base {
   * {
-    @apply font-poppins;
     @apply p-0;
     @apply m-0;
   }

@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import GoogleIcon from '../../../common/assets/images/google.png';
+import GoogleIcon from '../../common/assets/images/google.png';
 import { Button, Input } from 'antd';
 import { LoginPanel } from '../components/login-panel';
 import RegisterForm from './_component/form';
