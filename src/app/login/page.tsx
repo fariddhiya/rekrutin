@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import GoogleIcon from '../../common/assets/images/google.png';
 import { Button, Input } from 'antd';
-import { LoginPanel } from '../components/login-panel';
+import { LoginPanel } from '../../components/login-panel';
 
 export default function LoginPage() {
   return (
@@ -40,7 +40,7 @@ export default function LoginPage() {
 
           <div>
             <Button
-              className='h-10 w-full bg-[#243238] font-poppins !text-white hover:!bg-[#7693F5]'
+              className='font-poppins h-10 w-full bg-[#243238] !text-white hover:!bg-[#7693F5]'
               type='primary'
             >
               Sign in

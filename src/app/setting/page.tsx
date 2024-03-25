@@ -1,7 +1,7 @@
-import Header from '../components/header';
-import Layout from '../components/layout';
-import { NavigationBar } from '../components/navigation-bar';
-import SearchBar from '../components/search-bar';
+import Header from '../../components/header';
+import Layout from '../../components/layout';
+import { NavigationBar } from '../../components/navigation-bar';
+import SearchBar from '../../components/search-bar';
 
 const SettingPage = () => {
   return (

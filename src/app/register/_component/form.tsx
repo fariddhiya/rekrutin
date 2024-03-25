@@ -1,9 +1,6 @@
 'use client';
-import Image from 'next/image';
-import Login1 from '../../../common/assets/images/login-1.svg';
-import GoogleIcon from '../../../common/assets/images/google.png';
+
 import { Button, Form, Input } from 'antd';
-import { Carousel } from 'antd';
 import { useEffect, useState } from 'react';
 import {
   isContainSpecialCharacter,
@@ -11,8 +8,8 @@ import {
   isValidLength,
 } from '../_lib/validation';
 import { isValidEmail } from '../../lib/validation';
-import { AlertMessage } from '../../components/alert';
 import { useRouter } from 'next/navigation';
+import { AlertMessage } from '../../../components/alert';
 
 const RegisterForm = () => {
   const router = useRouter();
@@ -155,7 +152,7 @@ const RegisterForm = () => {
 
       <div>
         <Button
-          className='h-10 w-full bg-[#243238] font-poppins !text-white hover:!bg-[#7693F5]'
+          className='font-poppins h-10 w-full bg-[#243238] !text-white hover:!bg-[#7693F5]'
           type='primary'
           onClick={handleButton}
         >

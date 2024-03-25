@@ -1,23 +1,35 @@
-import Image from 'next/image';
 import { FaArrowUp } from 'react-icons/fa';
-import { BullishIco } from '../../../common/assets/images';
-import { FcBullish } from 'react-icons/fc';
-import { BsGraphUpArrow } from 'react-icons/bs';
 import { FaArrowTrendUp } from 'react-icons/fa6';
 
-export default function SummaryCard({ active }: { active: boolean }) {
+type SummaryCardProps = {
+  active: boolean;
+  name: string;
+  amount: number;
+  type: string;
+  changeAmount: number;
+};
+
+const SummaryCard: React.FC<SummaryCardProps> = ({
+  active,
+  name,
+  amount,
+  type,
+  changeAmount,
+}) => {
   return (
     <div
-      className={`flex h-40 w-64 flex-col justify-between rounded-2xl ${active ? 'bg-[#8e82fe]' : 'border-[2px] border-solid border-[#8e82fe36] bg-white'} p-5`}
+      className={`flex h-40 w-full flex-col justify-between rounded-2xl ${active ? 'bg-[#8e82fe]' : 'border-[2px] border-solid border-[#8e82fe36] bg-white'} p-5`}
     >
       <div className='h-full'>
-        <p className={`pb-4 ${active ? 'text-slate-100' : 'text-slate-800'}`}>
-          Total applicants
+        <p
+          className={`pb-4 font-medium ${active ? 'text-slate-100' : 'text-slate-800'}`}
+        >
+          {name}
         </p>
         <h1
           className={`text-6xl font-normal ${active ? 'text-white' : 'text-black'}`}
         >
-          145
+          {amount}
         </h1>
       </div>
 
@@ -26,7 +38,9 @@ export default function SummaryCard({ active }: { active: boolean }) {
           <FaArrowUp
             className={`${active ? 'fill-[#8e82fe]' : 'fill-black'}`}
           />
-          <p className={`${active ? 'text-[#8e82fe]' : 'text-black'}`}>20%</p>
+          <p className={`${active ? 'text-[#8e82fe]' : 'text-black'}`}>
+            {changeAmount}%
+          </p>
         </div>
 
         <FaArrowTrendUp
@@ -35,4 +49,6 @@ export default function SummaryCard({ active }: { active: boolean }) {
       </div>
     </div>
   );
-}
+};
+
+export default SummaryCard;

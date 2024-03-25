@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 import NavbarCard from './navbar-card';
-import { RekrutinIco } from '../../../common/assets/images';
-import { menu } from '../../../common/dummy/menu';
+import { RekrutinIco } from '../../common/assets/images';
+import { menu } from '../../common/dummy/menu';
 import { usePathname } from 'next/navigation';
 
 export const NavigationBar = () => {

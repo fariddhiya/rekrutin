@@ -1,9 +1,8 @@
 'use client';
 
-import { MailOutlined } from '@ant-design/icons';
 import { Menu, MenuProps } from 'antd';
 import { useState } from 'react';
-import { AvatarIco } from '../../../common/assets/images';
+import { AvatarIco } from '../../common/assets/images';
 import Image from 'next/image';
 
 type MenuItem = Required<MenuProps>['items'][number];

@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
   return (
     <AntdStyledComponentsRegistry>
-      <main className='flex h-screen w-full !bg-white'>
+      <main className='flex h-auto min-h-screen w-full !bg-white'>
         <NavigationBar />
         <div className='w-full bg-white'>
           <Header />

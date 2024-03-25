@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import GoogleIcon from '../../common/assets/images/google.png';
 import { Button, Input } from 'antd';
-import { LoginPanel } from '../components/login-panel';
+import { LoginPanel } from '../../components/login-panel';
 import BackButton from '../../common/assets/images/back.png';
 // import { useRouter } from 'next/router';
 
@@ -45,7 +45,7 @@ export default function ForgotPasswordPage() {
           </div>
 
           <Button
-            className='mt-6 h-10 w-full bg-[#243238] font-poppins !text-white hover:!bg-[#7693F5]'
+            className='font-poppins mt-6 h-10 w-full bg-[#243238] !text-white hover:!bg-[#7693F5]'
             type='primary'
           >
             Send Email
