@@ -28,7 +28,10 @@ export default function CurrentOpeningCard({
       <div className='my-2 flex'>
         {tags.map((v, i) => {
           return (
-            <p className='m-1 flex items-center justify-center rounded-full bg-[#f4f3ff] px-2 py-1 text-xs font-bold text-[#8e82fe]'>
+            <p
+              className='m-1 flex items-center justify-center rounded-full bg-[#f4f3ff] px-2 py-1 text-xs font-bold text-[#8e82fe]'
+              key={i}
+            >
               {v}
             </p>
           );
