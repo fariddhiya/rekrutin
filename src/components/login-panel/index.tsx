@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Login1 from '../../../common/assets/images/login-1.svg';
 import { Carousel } from 'antd';
+import { Login } from '../../common/assets/images';
 
 export const LoginPanel = () => {
   return (
@@ -9,11 +9,7 @@ export const LoginPanel = () => {
         {[1, 2, 3].map((item, index) => (
           <div className='h-full' key={index}>
             <div className='flex flex-col items-center justify-center'>
-              <Image
-                src={Login1}
-                alt={`Image Login ${index + 1}`}
-                width={450}
-              />
+              <Image src={Login} alt={`Image Login ${index + 1}`} width={450} />
             </div>
             <div className='mx-56 my-4 mb-8 flex h-32 items-center justify-center bg-red-500'>
               <p className='break-words text-xl'>

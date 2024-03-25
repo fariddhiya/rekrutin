@@ -12,6 +12,7 @@ import SearchIco from '../images/search-ico.png';
 import AvatarIco from '../images/avatar-ico.png';
 import BullishIco from '../images/bullish-ico.png';
 import GoogleIco from '../images/google.png';
+import Login from '../images/login-1.svg';
 
 export {
   DashboardIco,
@@ -28,4 +29,5 @@ export {
   AvatarIco,
   BullishIco,
   GoogleIco,
+  Login,
 };
